@@ -1,0 +1,22 @@
+{
+  "name": "vve-pip-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nexmo-se/video-express-pip-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nexmo-se/video-express-pip-example/issues"
+  },
+  "homepage": "https://github.com/nexmo-se/video-express-pip-example#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
