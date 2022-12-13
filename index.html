@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/index.css" media="screen" charset="utf-8">
+    </head>
+    <body>
+        <div id="roomContainer">
+
+        </div>
+        <div id="publisher-pip-container">
+            <div id="publisher-video-container">
+
+            </div>
+        </div>
+        <script src="https://static.opentok.com/v1/js/video-express.js"></script>
+        <script type="text/javascript">
+            const room = new VideoExpress.Room({
+              apiKey: '47617441', // add your OpenTok API key
+              sessionId: '1_MX40NzYxNzQ0MX5-MTY3MDkyMzA2Njg1OH52bk4wNjg3UzFRK0xBRU03cXRSWElQWnl-fn4', // add your OpenTok Session ID
+              token: 'T1==cGFydG5lcl9pZD00NzYxNzQ0MSZzaWc9MDhhY2E1Y2VmMjJmZDZiNTU1MzBmMTkwN2RkYjM3NTBhYjM5ZTlmYTpzZXNzaW9uX2lkPTFfTVg0ME56WXhOelEwTVg1LU1UWTNNRGt5TXpBMk5qZzFPSDUyYms0d05qZzNVekZSSzB4QlJVMDNjWFJTV0VsUVdubC1mbjQmY3JlYXRlX3RpbWU9MTY3MDkyMzA3NCZub25jZT0wLjQyNzgyMjc4MTU0MTA2Njcmcm9sZT1wdWJsaXNoZXImZXhwaXJlX3RpbWU9MTY3MzUxNTA5MyZpbml0aWFsX2xheW91dF9jbGFzc19saXN0PQ==', // add your OpenTok token
+              roomContainer: 'roomContainer',
+              managedLayoutOptions: {
+                cameraPublisherContainer: 'publisher-video-container'
+              }
+            });
+           
+            room.join({publisherProperties:{
+                width:"100%",
+                height:"100%",
+                name:'asdsadsa'
+              }});
+            const { camera } = room;
+            camera.setVideoFilter({type:'backgroundBlur', blurStrength:"high"})
+           </script>
+    </body>
+</html>
