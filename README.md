@@ -5,7 +5,8 @@ This application shows how to use (Vonage Video Express SDK)[https://tokbox.com/
 ## Instructions
 
 1. Run `npm install`
-2. Run `npm start`
+2. Add credentials (Apikey, sessionId, token) on the `public/index.html` file
+3. Run `npm start`
 
 ## How it works
 
